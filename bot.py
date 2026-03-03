@@ -1,4 +1,4 @@
-import os
+
 import datetime
 import requests
 import random
@@ -6,8 +6,9 @@ from telegram import Update
 from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes
 import asyncio
 
-BOT_TOKEN = os.getenv("BOT_TOKEN")
-HF_TOKEN = HF_TOKEN = os.getenv("HF_TOKEN")
+BOT_TOKEN = "8244037343:AAGUNWrpS9b_iZaGcmdCefcztlYy2SWBtFg"
+HF_TOKEN = "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"
+
 
 API_URL = "https://api-inference.huggingface.co/models/google/flan-t5-large"
 
@@ -64,3 +65,4 @@ app.add_handler(CommandHandler("start", start))
 
 
 app.run_polling()
+
